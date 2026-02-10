@@ -7,5 +7,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // ← разрешает подключения с любого IP
     port: 5173,      // или другой порт по желанию
+    allowedHosts: ['cooldailyroutine.ru'],
   },
 })
