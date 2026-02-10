@@ -17,7 +17,7 @@ RUN npm ci --include=dev
 COPY . .
 
 # Открываем порт dev-сервера (Vite по умолчанию — 5173)
-EXPOSE 5173
+EXPOSE 80
 
 # Запускаем dev-сервер, слушающий все интерфейсы
 CMD ["npm", "run", "dev"]
