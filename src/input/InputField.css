@@ -1,0 +1,81 @@
+/* Контейнер для пары "метка + поле ввода" */
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Метка (текст слева) */
+.field-label {
+  /* Текст */
+  font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  
+  /* Размеры */
+  min-width: 80px;
+  white-space: nowrap;
+}
+
+/* Поле ввода */
+.field-input {
+  /* Размеры и текст */
+  flex-grow: 1;
+  padding: 6px 8px;
+  font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #000000;
+  background-color: white;
+
+  /* 3D эффект границ - классический стиль Windows 95 */
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+
+  /* Запрет выделения текста в инпуте */
+  user-select: text;
+
+  /* Сброс современных эффектов */
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Состояние при фокусе */
+.field-input:focus {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Состояние при наведении (опционально) */
+.field-input:hover:not(:focus) {
+  border-top: 2px solid #c0c0c0;
+  border-left: 2px solid #c0c0c0;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+/* Placeholder в стиле Windows */
+.field-input::placeholder {
+  color: #808080;
+  font-style: italic;
+  opacity: 1;
+}
+
+/* Неактивное состояние */
+.field-input:disabled {
+  background-color: #c0c0c0;
+  color: #808080;
+  cursor: not-allowed;
+}
+
+/* Курсор текста (выделение) */
+.field-input::selection {
+  background-color: #000080;
+  color: white;
+}

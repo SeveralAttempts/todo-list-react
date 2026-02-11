@@ -1,0 +1,56 @@
+button {
+	/* Основные размеры и текст */
+	padding: 8px 8px;
+	font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	cursor: default;
+	user-select: none;
+
+	/* 3D-эффект границ */
+	border-top: 2px solid #fdffff;
+	border-left: 2px solid #fdffff;
+	border-right: 2px solid #818181;
+	border-bottom: 2px solid #818181;
+
+	/* Фон кнопки */
+	background-color: #c0c0c0;
+
+	/* Отключение современных эффектов */
+	outline: none;
+	box-shadow: none;
+}
+
+/* Состояние при наведении */
+button:hover {
+	background-color: #a0a0a0;
+}
+
+/* Состояние при нажатии (кнопка "утапливается") */
+button:active {
+	border-top: 2px solid #818181;
+	border-left: 2px solid #818181;
+	border-right: 2px solid #fdffff;
+	border-bottom: 2px solid #fdffff;
+	background-color: #a0a0a0;
+	transform: translate(1px, 1px);
+}
+
+/* Фокус (как в старых приложениях)
+  button:focus {
+    outline: 1px dotted #000000;
+  } */
+
+/* Неактивное состояние */
+button:disabled {
+	background-color: #c0c0c0;
+	color: #818181;
+	border-top: 2px solid #fdffff;
+	border-left: 2px solid #fdffff;
+	border-right: 2px solid #818181;
+	border-bottom: 2px solid #818181;
+	cursor: default;
+	opacity: 0.6;
+}
