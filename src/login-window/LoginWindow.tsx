@@ -7,7 +7,7 @@ function LoginWindow() {
         <>
             <div className='login-window-container'>
                 <div className='login-window-upper-panel'>
-                    <span>Login</span>
+                    <span>Login window</span>
                     <div className="login-window-controls">
                         <Button padding='2px 5px'>_</Button>
                         <Button padding='2px 5px'>□</Button>
