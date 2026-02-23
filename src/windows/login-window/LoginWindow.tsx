@@ -1,6 +1,6 @@
 import './LoginWindow.css'
-import Button from './../button/Button';
-import InputField from './../input/InputField';
+import Button from './../../components/button/Button';
+import InputField from './../../components/input/InputField';
 
 function LoginWindow() {
     return (

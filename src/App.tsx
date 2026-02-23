@@ -1,5 +1,5 @@
 import './App.css'
-import LoginWindow from './login-window/LoginWindow';
+import LoginWindow from './windows/login-window/LoginWindow';
 
 function App() {
 	return (
