@@ -1,4 +1,4 @@
-export interface FieldProps {
+export interface InputFieldProps {
     label: string
     type?: 'text' | 'password'
     name: string
