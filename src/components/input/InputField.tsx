@@ -1,5 +1,5 @@
 import './InputField.css'
-import type { FieldProps } from './FieldProps'
+import type { InputFieldProps } from './InputFieldProps'
 
 function InputField({
   label,
@@ -9,7 +9,7 @@ function InputField({
   value,
   onChange,
   disabled = false
-}: FieldProps) {
+}: InputFieldProps) {
   return (
     <div className="field-row">
       <label className="field-label" htmlFor={name}>
